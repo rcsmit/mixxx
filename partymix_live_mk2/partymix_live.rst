@@ -1,14 +1,16 @@
 Numark Party Mix Live
 ================
 
-`Manufacturer's product page <https://www.numark.com/product/party-mix>`_ · `Manufacturer's user manual <http://www.numark.com/images/product_downloads/Party_Mix_-_User_Guide_-_v1.1.pdf>`_ · `Forum thread <https://mixxx.discourse.group/t/numark-party-mix-midi-mapping/16712>`_
+`Manufacturer's product page <https://www.numark.com/product/party-mix-ii>`_ · `Manufacturer's user manual <https://cdn.inmusicbrands.com/Numark/Party%20Mix%20MKII%20-%20User%20Guide%20-%20v1.4.pdf>`_ · `Forum thread <https://mixxx.discourse.group/t/numark-party-mix-ii-numark-party-mix-live-mapping/28861>`_
+
+`Manufacturer's product page <https://www.numark.com/product/party-mix-live>`_ · `Manufacturer's user manual <https://www.numark.com/images/product_downloads/Party_Mix_Live_-_User_Guide_-_v1.3.pdf>`_ · `Forum thread <https://mixxx.discourse.group/t/numark-party-mix-ii-numark-party-mix-live-mapping/28861>`_
 
 Based on https://github.com/mixxxdj/manual/blob/main/source/hardware/controllers/numark_party_mix.rsthttps://github.com/mixxxdj/manual/blob/main/source/hardware/controllers/numark_party_mix.rst
 
 Overview
 --------
 
-.. figure:: ../../_static/controllers/numark_party_mix.svg
+.. figure:: knobs numark partymix live MK2.jpeg
    :align: center
    :width: 100%
    :figwidth: 100%
@@ -49,6 +51,7 @@ Each of those controls exists in both :term:`decks<deck>` and affects only the c
    "9", ":hwlabel:`Channel fader`", "Adjust volume level"
    "11", ":hwlabel:`CUE`", ":term:`Headphone button`. Toggle sending channel to the cue (headphone) channel"
    "12", ":hwlabel:`Jog wheel`", "If scratch mode is enabled (see the :hwlabel:`SCRATCH` button below): scratch
+   "13", ":hwlabel:`Filter`", ":term:`Filter`. Filter effect. Turn fully left for low-pass filter, fully right for high-pass filter, center position is no filter."
 
    The behavior of the jog wheel can be fine-tuned, see the :ref:`Adjustable values<numark_party_mix_adjustable>` section."
 

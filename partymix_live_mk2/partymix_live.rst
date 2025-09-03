@@ -10,7 +10,7 @@ Based on https://github.com/mixxxdj/manual/blob/main/source/hardware/controllers
 Overview
 --------
 
-.. figure:: knobs numark partymix live MK2.jpeg
+.. figure:: knobs numark partymix live MK2.svg
    :align: center
    :width: 100%
    :figwidth: 100%

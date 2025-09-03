@@ -99,24 +99,18 @@ This script is for the Numark Party Mix MK2 controller.
 It is based on the work of several authors and has been modified
 to suit the needs of the Rene Smit. (see below)
 
-             |
-             |
-             V
+->
 
 Source .js and .xml file
 https://github.com/magtomm/MIXXX-Numark-party-mix-2
 
-             |
-             |
-             V
+->
 
 And these are based on 
 based on https://github.com/rylito/mixxx_numark_partymix 
 forked from https://github.com/jagy128/MIXXX-Numarl-party-mix-2
 
-             |
-             |
-             V
+->
 
 Based on the script of Ryli Dunlap (rylito)
 https://github.com/rylito/mixxx_numark_partymix
@@ -156,8 +150,7 @@ turn the loop of on the screen
 SAMPLE 
 
 the sampler mode is used as a second loopmode (1,2,4,8 beats)
-to reverse:  change tha name of updateSamplerPadLEDs_ to updateSamplerPadLEDs and vica versa
-             and adjust the (un)comments in PAD_MAPPINGS
+to reverse:  change tha name of updateSamplerPadLEDs_ to updateSamplerPadLEDs and vica versa adjust the (un)comments in PAD_MAPPINGS
 
 Deck 1 & 2
 1,2,4 and 8 beats. To unloop, press a second time. To delete the loop, go to loopmode and press 4.
@@ -193,5 +186,4 @@ todo looptightening with the jogwheel https://www.youtube.com/watch?v=sa4hGzYdHw
 
 
 the sampler mode is used as a second loopmode (1,2,4,8 beats)
-to reverse:  change tha name of updateSamplerPadLEDs_ to updateSamplerPadLEDs and vica versa
-             and adjust the (un)comments in PAD_MAPPINGS
+to reverse:  change tha name of updateSamplerPadLEDs_ to updateSamplerPadLEDs and vica versa and adjust the (un)comments in PAD_MAPPINGS

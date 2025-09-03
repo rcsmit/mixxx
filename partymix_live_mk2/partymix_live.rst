@@ -1,9 +1,10 @@
 Numark Party Mix Live
 ================
 
-`Manufacturer's product page <https://www.numark.com/product/party-mix-ii>`_ · `Manufacturer's user manual <https://cdn.inmusicbrands.com/Numark/Party%20Mix%20MKII%20-%20User%20Guide%20-%20v1.4.pdf>`_ · `Forum thread <https://mixxx.discourse.group/t/numark-party-mix-ii-numark-party-mix-live-mapping/28861>`_
+`Manufacturer's product page Partymix II <https://www.numark.com/product/party-mix-ii>`_ · `Manufacturer's user manual <https://cdn.inmusicbrands.com/Numark/Party%20Mix%20MKII%20-%20User%20Guide%20-%20v1.4.pdf>`_ · `Forum thread <https://mixxx.discourse.group/t/numark-party-mix-ii-numark-party-mix-live-mapping/28861>`_
 
-`Manufacturer's product page <https://www.numark.com/product/party-mix-live>`_ · `Manufacturer's user manual <https://www.numark.com/images/product_downloads/Party_Mix_Live_-_User_Guide_-_v1.3.pdf>`_ · `Forum thread <https://mixxx.discourse.group/t/numark-party-mix-ii-numark-party-mix-live-mapping/28861>`_
+`Manufacturer's product page Partymix Live <https://www.numark.com/product/party-mix-live>`_ · `Manufacturer's user manual <https://www.numark.com/images/product_downloads/Party_Mix_Live_-_User_Guide_-_v1.3.pdf>`_ · `Forum thread <https://mixxx.discourse.group/t/numark-party-mix-ii-numark-party-mix-live-mapping/28861>`_
+
 
 Based on https://github.com/mixxxdj/manual/blob/main/source/hardware/controllers/numark_party_mix.rsthttps://github.com/mixxxdj/manual/blob/main/source/hardware/controllers/numark_party_mix.rst
 
@@ -91,24 +92,106 @@ Pads
 
    Pad 4 switches mix mode. Pad light on indicates Dry/Wet mode. Pad Light off indicates Dry+Wet mode."
 
-.. _numark_party_mix_adjustable:
 
-Adjustable values
------------------
+Mapping details
+---------------
+This script is for the Numark Party Mix MK2 controller.
+It is based on the work of several authors and has been modified
+to suit the needs of the Rene Smit. (see below)
 
-There are a few configurable values at the top of the script (:file:`Numark-Party-Mix.scripts.js`).
+             |
+             |
+             V
 
-.. csv-table::
-   :header: "Variable", "Default value", "Description"
-   :widths: 10 20 70
-   :quote: '
+Source .js and .xml file
+https://github.com/magtomm/MIXXX-Numark-party-mix-2
 
-   '``jogScratchSensitivity``', '340', 'Scratching sensitivity'
-   '``jogScratchAlpha``', '1/8', 'For controlling the alpha-beta filter used in scratching'
-   '``jogScratchBeta``', '1/8/32', 'For controlling the alpha-beta filter used in scratching'
-   '``jogPitchSensitivity``', '10', 'Jog wheel (pitch bend) sensitivity during play'
-   '``jogSearchSensitivity``', '1/2', 'Jog wheel (scrub) sensitivity during pause'
-   '``autoLoopSizes``', '[ "4", "8", "16", "32"]', 'Loop sizes for the auto-loop pad mode, each value corresponds to one of the pads.'
+             |
+             |
+             V
 
-.. hint::
-   See `here <https://github.com/mixxxdj/mixxx/wiki/Midi-Scripting#user-content-scratching-and-jog-wheels>`_ for more info about constants used in scratching.
+And these are based on 
+based on https://github.com/rylito/mixxx_numark_partymix 
+forked from https://github.com/jagy128/MIXXX-Numarl-party-mix-2
+
+             |
+             |
+             V
+
+Based on the script of Ryli Dunlap (rylito)
+https://github.com/rylito/mixxx_numark_partymix
+
+"Thanks to authors of other scripts used as a reference and to DJ Dexter 
+and DarkPoubelle for the initial PartyMix mappings posted on the forum.""
+
+
+
+//////////////////////////////////////////////////////////////////////
+
+=== Knobs ===
+Deck 1/2
+Level → Treble
+Treble → Mid
+Filter → Quick effect super knob
+
+=== PADS ===
+
+HOT CUE
+Deck 1 & 2
+1-4 Set hotcue 1-4.
+To delete the cue, use the screen (right click on the cue number, click the bin)
+
+LOOP
+Deck 1 & 2
+1 Loop start
+2 Loop end
+3 Loop halve (only works when quantize is set ON)
+4 Loop exit (deletes also the loop start)
+
+Uses the quantize settings of the deck. (the magnet icon)
+If the quantize is set to ON, the loop will be set to the nearest beat.
+When pushing the “wrong” order, behavior might be unpredictable,
+turn the loop of on the screen
+
+SAMPLE 
+
+the sampler mode is used as a second loopmode (1,2,4,8 beats)
+to reverse:  change tha name of updateSamplerPadLEDs_ to updateSamplerPadLEDs and vica versa
+             and adjust the (un)comments in PAD_MAPPINGS
+
+Deck 1 & 2
+1,2,4 and 8 beats. To unloop, press a second time. To delete the loop, go to loopmode and press 4.
+
+
+original:
+Deck 1
+1-4 Sample 1-4
+
+Deck 2
+1-4 Sample 5-8
+
+Samples are not automatically loaded (anymore) when the bank is empty
+If you hit the pad when the sample is playing, the sample is not stopped
+but restarted, so you can use the samples as drumcomputer
+
+EFFECT
+Deck 1
+1 Toggle 1st Effect FX1
+2 Toggle 2nd Effect FX1
+3 Toggle 3rd Effect FX1
+4 Vinyl stop efffect /
+(commented out:Spin back)
+
+Deck 2
+1 Toggle 1st Effect FX2
+2 Toggle 2nd Effect FX2
+3 Toggle 3rd Effect FX2
+4 Vinyl stop efffect /
+(commented out:Spin back)
+
+todo looptightening with the jogwheel https://www.youtube.com/watch?v=sa4hGzYdHwM 3:42
+
+
+the sampler mode is used as a second loopmode (1,2,4,8 beats)
+to reverse:  change tha name of updateSamplerPadLEDs_ to updateSamplerPadLEDs and vica versa
+             and adjust the (un)comments in PAD_MAPPINGS
